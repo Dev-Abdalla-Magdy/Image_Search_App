@@ -127,12 +127,10 @@ body {
   .app .header form {
     width: 100%;
     margin: 0 auto;
-    gap: 0px;
+    gap: 10px;
   }
-  .app .header .search-input {
-    border-radius: 10px 0 0 10px;
-  }
+  .app .header .search-input,
   .app .header .search-btn {
-    border-radius: 0 10px 10px 0;
+    padding: 12px;
   }
 }
