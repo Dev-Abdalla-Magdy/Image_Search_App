@@ -51,5 +51,9 @@ formEl.addEventListener('submit', (event) => {
 });
 
 moreBtn.addEventListener('click', () => {
-  searchImages();
+  if (pageNumber === 1) {
+    moreBtn.removeEventListener;
+  } else {
+    searchImages();
+  }
 });
