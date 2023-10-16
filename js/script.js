@@ -47,12 +47,19 @@ async function searchImages() {
 formEl.addEventListener('submit', (event) => {
   event.preventDefault();
   pageNumber = 1;
-  searchImages();
+
+  if (!searchInput.value) {
+    formEl.removeEventListener;
+    alert('Type keyword to search for');
+  } else {
+    searchImages();
+  }
 });
 
 moreBtn.addEventListener('click', () => {
   if (pageNumber === 1) {
     moreBtn.removeEventListener;
+    alert('This is Home Page There isn\'t more to show\nplease, Type keyword to search for');
   } else {
     searchImages();
   }
